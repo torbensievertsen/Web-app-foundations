@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+input {
+  height: 25px;
+  width: 25px;
+}
