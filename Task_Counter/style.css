@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin: 0;
+  padding: 3rem;
+  background-color: yellow;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  height: 40px;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
