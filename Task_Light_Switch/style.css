@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  transition: 1s ease-in-out background-color;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.day {
+  background-color: white;
+  border: 0.5rem solid black;
+  color: black;
+}
+
+.night {
+  background-color: black;
+  color: white;
+  border: 0.5rem solid white;
+  box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
+}
+
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+}
