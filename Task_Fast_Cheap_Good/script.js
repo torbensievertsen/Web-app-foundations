@@ -32,7 +32,7 @@ Cheap.addEventListener("click", function () {
 });
 Good.addEventListener("click", function () {
   if (Good.checked) {
-    if (Cheap.checked && Good.checked) {
+    if (Cheap.checked && Fast.checked) {
       if (test === 2) {
         Cheap.checked = false;
       }

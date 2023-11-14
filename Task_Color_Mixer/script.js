@@ -4,8 +4,8 @@ const Blue = document.querySelector("#blue");
 const main = document.querySelector("main");
 const hexWert = document.querySelector("#hex-wert");
 let numRed = 255;
-let numGreen = 0;
-let numBlue = 127;
+let numGreen = 105;
+let numBlue = 180;
 main.style.backgroundColor =
   "rgb(" + numRed + "," + numGreen + "," + numBlue + ")";
 
