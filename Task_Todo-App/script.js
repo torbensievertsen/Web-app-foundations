@@ -12,12 +12,15 @@ renderTodos();
 btnAdd.addEventListener("click", addTodo);
 filter.addEventListener("change", changeFilter);
 remove.addEventListener("click", removeDoneToDoes);
-all.defaultChecked = true;
 
 function addTodo(event) {
   event.preventDefault();
   const inputText = document.querySelector("#input");
   for (let todo of todos) {
+    if (inputText.value.trim() === "") {
+      inputText.value = "";
+      return;
+    }
     if (inputText.value.toUpperCase() === todo.description.toUpperCase()) {
       console.log("error");
       inputText.value = "";
@@ -60,7 +63,6 @@ function renderTodos(event) {
     }
   });
 }
-
 function updateTodos(event) {
   if (!event.target.checked) {
     event.target.todo.done = false;
